@@ -6,3 +6,7 @@ printInfo()
 def additionalFunction():
     print("Additional function in App.py")
 additionalFunction()
+
+def newFeature():
+    print("New feature added in App.py")
+newFeature()
