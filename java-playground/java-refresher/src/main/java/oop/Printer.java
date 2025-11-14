@@ -1,4 +1,4 @@
-package lambda;
+package oop;
 
 public class Printer implements Printable{
     public void print() {

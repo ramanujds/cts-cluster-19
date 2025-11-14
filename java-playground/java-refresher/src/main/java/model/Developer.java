@@ -15,6 +15,6 @@ public non-sealed class Developer extends Employee{
     public void printDetails() {
         System.out.println("Developer Details : ");
         System.out.println("Language : "+language);
-        super.printDetails();
+        System.out.println(this);
     }
 }

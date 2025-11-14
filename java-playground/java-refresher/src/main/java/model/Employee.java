@@ -1,6 +1,6 @@
 package model;
 
-public sealed class Employee permits Developer{
+public sealed abstract class Employee permits Developer,Manager{
 
     private int id;
     private String name;
@@ -50,9 +50,6 @@ public sealed class Employee permits Developer{
                 '}';
     }
 
-    public void printDetails(){
-        System.out.println("Employee Details : ");
-        System.out.println(this);
-    }
+    public abstract void printDetails();
 
 }

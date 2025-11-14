@@ -1,18 +1,25 @@
 package app;
 
+import oop.EmployeeService;
+import oop.EmployeeServiceImpl;
 import model.Developer;
 import model.Employee;
+import model.Manager;
 
 public class App {
 
     public static void main(String[] args) {
 
-        Employee e1 = new Employee(101,"Harsh",56000);
-        Employee e2 = new Developer(102,"Javed",78000,"Java");
+        EmployeeService service;
 
-        e1.printDetails();
+        service = new EmployeeServiceImpl();
 
-        e2.printDetails();
+        service.getAllEmployees();
+
+
+        Employee employee2 = new Manager();
+
+        Employee employee3 = new Developer();
 
     }
 
