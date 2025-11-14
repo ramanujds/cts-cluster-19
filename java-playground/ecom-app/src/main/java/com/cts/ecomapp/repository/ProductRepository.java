@@ -2,6 +2,7 @@ package com.cts.ecomapp.repository;
 
 import com.cts.ecomapp.exception.InvalidProductException;
 import com.cts.ecomapp.exception.ProductNotFoundException;
+import com.cts.ecomapp.model.Category;
 import com.cts.ecomapp.model.Product;
 
 import java.util.List;
@@ -17,5 +18,11 @@ public interface ProductRepository {
     List<Product> getAllProducts();
 
     void deleteProduct(int id) throws ProductNotFoundException;
+
+    List<Product> findProductsByCategory(Category category);
+
+    List<Product> findProductsByCategory(Category category, double minPrice, double maxPrice);
+
+
 
 }
